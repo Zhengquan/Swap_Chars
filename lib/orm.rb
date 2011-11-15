@@ -42,6 +42,7 @@ class ActiveRecord::Base
   puts "Changed?: #{changed?}"
   puts "valid?: #{valid?}"
   puts "errors: #{errors}"
+  puts "errors: #{errors.inspect}"
   save
   end
 end
