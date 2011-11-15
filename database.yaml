@@ -3,4 +3,4 @@ archieve_db :
   database : data_archieves
   username : root
   host : localhost
-  password : pw1234567!
+  password : password

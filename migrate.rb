@@ -16,8 +16,7 @@ Archieve::Answer.find_each do |answer|
   str = answer.content
   str.gsub!(/引用:原帖由[\s\S]+发表/,"")
   str.strip!
-  answer.reload
-  answer.update_attributes(
+  answer.update_attribute(
     :content => str
   )
 end
