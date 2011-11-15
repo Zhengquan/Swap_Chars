@@ -52,8 +52,8 @@ The table answers only has one record,the table dump file is pushed here.
 ### Prbolem
 When I only use update_attribute, It can't update the record.  
 But when I replace this line with  
-	answer.reload
-	answer.update_attributes(:content => str)
+`answer.reload`  
+`answer.update_attributes(:content => str)`  
 
 It indeed can update this only one record.  
 Is it a bug in ActiveRecord when using it stand alone.
