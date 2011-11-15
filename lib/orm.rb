@@ -36,3 +36,12 @@ module Archieve
     include Extensions::UUID
   end
 end
+class ActiveRecord::Base
+  def update_attribute(name, value) # make sure you use the exact code of your Rails Version here
+  send(name.to_s + '=', value)
+  puts "Changed?: #{changed?}"
+  puts "valid?: #{valid?}"
+  puts "errors: #{errors}"
+  save
+  end
+end

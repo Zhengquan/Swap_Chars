@@ -14,9 +14,7 @@ require_all 'lib'
 
 Archieve::Answer.find_each do |answer|
   str = answer.content
-  str.gsub!(/引用:原帖由[\s\S]+发表/,"")
+  str = "测试"
   str.strip!
-  answer.update_attribute(
-    :content => str
-  )
+  answer.update_attribute(:content, str)
 end
