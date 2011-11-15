@@ -28,8 +28,8 @@ $archieve_config = {
   :adapter => "mysql2",
   :host => "localhost",
   :username => "root",
-  :password => "pw1234567!",
-  :database => "password"
+  :password => "password",
+  :database => "database"
 }
 
 module Archieve
