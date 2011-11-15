@@ -1,0 +1,6 @@
+archieve_db :
+  adapter : mysql2
+  database : data_archieves
+  username : root
+  host : localhost
+  password : pw1234567!
