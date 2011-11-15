@@ -29,7 +29,7 @@ $archieve_config = {
   :host => "localhost",
   :username => "root",
   :password => "pw1234567!",
-  :database => "data_archieves"
+  :database => "password"
 }
 
 module Archieve

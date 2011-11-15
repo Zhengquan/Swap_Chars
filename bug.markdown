@@ -27,7 +27,7 @@ I used ActiveRecord in a stand alone script without rails runner.
 	  :host => "localhost",
 	  :username => "root",
 	  :password => "pw1234567!",
-	  :database => "data_archieves"
+	  :database => "password"
 	}
 	
 	module Archieve
@@ -51,8 +51,9 @@ The table answers only has one record,the table dump file is pushed here.
 [Mysql Dump File](https://raw.github.com/Zhengquan/Swap_Chars/bug_report/bug_answers.sql)
 ### Prbolem
 When I only use update_attribute, It can't update the record.  
-But when I replace this line with
+But when I replace this line with  
 	answer.reload
 	answer.update_attributes(:content => str)
+
 It indeed can update this only one record.  
 Is it a bug in ActiveRecord when using it stand alone.
